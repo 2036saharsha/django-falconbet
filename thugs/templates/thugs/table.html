@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - &lt;Table&gt; Responsive</title>
+  <link rel="stylesheet" href="static/table/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1><span class="blue"></span>BETS<span class="blue"></span> <span class="yellow">ENROLLED</pan></h1>
+<h2><a href="{% url 'HOME' %}">HOME</a></h2>
+
+<table class="container">
+	<thead>
+		<tr>
+			<th><h1>User</h1></th>
+			<th><h1>CLUB</h1></th>
+			<th><h1>BET(RS)</h1></th>
+			<th><h1>Win And Get</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>{{data.author}}</td>
+			<td>{{data.bet}}</td>
+			<td>{{data.betrs}}</td>
+			<td>{{data.comment}}</td>
+		</tr>
+	</tbody>
+</table>
+<!-- partial -->
+  
+</body>
+</html>
